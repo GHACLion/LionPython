@@ -37,12 +37,41 @@ print(type(a))
 
 
 #   支持解包赋值，解包赋值时，按照顺序，一一对应赋值，但是要求 参数个数 和 值的个数 对应，即：不能是 a,b = 10,20,30 , 只能是 a,b = 10,20
-a,b,c=10,20,30
-print(a,b,c)
+a, b, c = 10, 20, 30
+print(a, b, c)
 
 
 # 交换两个变量的值
-a,b = 20,30
+a, b = 20, 30
 print("交换之前：", a, b)
-a,b = b,a
+a, b = b, a
 print("交换之后：", a, b)
+
+# 交换多个变量的值
+num1 = 10
+num2 = 20
+num3 = 30
+num4 = 40
+num1, num4, num3, num2 = num4, num2, num1, num3
+print(num1, num2, num3, num4)
+
+# 翻转一个四位数
+num_4ws = 1234
+# 取倒数第一位数 4
+n0 = num_4ws % 10
+# 取前三位 123， 给num_4ws 重新赋值 (1234 - 4) / 10 = 123
+num_4ws = (num_4ws - n0) / 10
+# 取倒数第二位数 3
+n1 = num_4ws % 10
+# 取前两位 12， 给 num_4ws 重新赋值 (123 - 3)  / 10 = 12
+num_4ws = (num_4ws - n1) / 10
+# 取倒数第三位数 2
+n2 = num_4ws % 10
+# 取第一位数 1 ， 给 num_4ws 重新赋值 （12 - 2） / 10 = 1
+num_4ws = (num_4ws - n2) / 10
+# 取倒数第四位数 1, 1 % 10 = 1
+n3 = num_4ws % 10
+num_4ws = (num_4ws - n3) / 10
+# 对四位数进行翻转赋值
+num_4ws = n0 * 1000 + n1 * 100 + n2 * 10 + n3 * 1
+print(num_4ws)
