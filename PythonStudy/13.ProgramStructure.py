@@ -61,11 +61,11 @@ print('3.把冰箱门关上')
 print('------程序结束-------')
 
 # 选择结构 之 单分支语句
-money=1000 # 余额
-s=int(input('请输入取款金额: ')) # 取款金额
+money = 1000 # 余额
+s = int(input('请输入取款金额: '))  # 取款金额
 # 对余额进行判断，余额大于取款金额，吐出钞票，反之，余额小于取款金额，提示“余额不足”，返回上级
 if money >= s:
-    money = money-s     # 使用 Tab 缩进代表方法体，取款后，给余额重新赋值
+    money = money - s     # 使用 Tab 缩进代表方法体，取款后，给余额重新赋值
     print('取款成功，余额为：', money)
 # 单分支语句对条件表达式以外的，不执行，比如：余额1000，我取1200，则跳过方法体，因为是单分支结构，不满足条件，程序直接结束。
 
@@ -86,7 +86,7 @@ print("该数为偶数" if num % 2 == 0 else "该数为奇数")
 num_a = int(input('请输入第一个整数：'))
 num_b = int(input('请输入第二个整数：'))
 # if 条件表达式 判断结果为 true, 执行 if 左侧的语句，如果 if 条件表达式判断结果为 false, 执行 else 右侧的语句
-print(str(num_a)+'大于等于'+str(num_b)  if  num_a>= num_b  else   str(num_a)+'小于'+ str(num_b))
+print(str(num_a) + '大于等于' + str(num_b)  if  num_a >= num_b  else   str(num_a) + '小于' + str(num_b))
 
 
 

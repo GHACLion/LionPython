@@ -20,8 +20,8 @@ print(a != 1 and b != 2)  # false and false --> false
 # not 的用法，对 Boolean 类型的运算数取反，真为假，假为真
 q1 = True
 q2 = False
-print(not q1) # not True --> False
-print(not q2) # not False --> True
+print(not q1)  # not True --> False
+print(not q2)  # not False --> True
 
 
 # in & not in 的用法

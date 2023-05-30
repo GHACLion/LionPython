@@ -2,7 +2,7 @@
 # DateTime: 2023/3/1 19:44
 
 # 自定义变量
-name='良哥'
+name = '良哥'
 print(name)
 # 标识：表示对象所存储的内存地址，使用内置函数id(obj)来获取
 print('标识', id(name))

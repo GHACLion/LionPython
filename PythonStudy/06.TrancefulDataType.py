@@ -4,14 +4,14 @@
 # 数据类型转换
 
 # str()函数   将其他数据类型转换为 str 类型
-name='良哥'
-age=30
+name = '良哥'
+age = 30
 # int类型的年龄不能直接进行字符串拼接，我需要将年龄转换为字符串类型， 使用：str(age)
-print('我是'+ name + ', 今年' + str(age) + '岁')
+print('我是' + name + ', 今年' + str(age) + '岁')
 
-a=10
-b=90.4
-c=False
+a = 10
+b = 90.4
+c = False
 print(type(a), type(b), type(c))
 print(str(a), str(b), str(c), type(str(a)), type(str(b)), type(str(c)))
 
@@ -19,11 +19,11 @@ print(str(a), str(b), str(c), type(str(a)), type(str(b)), type(str(c)))
 
 
 # int()函数   将其他数据类型转换为 int 类型
-s1='123'
-s2=98.4
-s3='54.86'
-s4=True
-s5='hello'
+s1 = '123'
+s2 = 98.4
+s3 = '54.86'
+s4 = True
+s5 = 'hello'
 # 将 str 转成 int 类型，字符串为 整数数字串
 print(int(s1), type(int(s1)))
 # 将 float 转成 int 类型，截取整数部分，舍掉小数部分

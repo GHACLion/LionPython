@@ -4,9 +4,9 @@
 # 常用数据类型
 
 # 整数类型
-n1=65
-n2=-36
-n3=0
+n1 = 65
+n2 = -36
+n3 = 0
 print(n1, type(n1))
 print(n2, type(n2))
 print(n3, type(n3))
@@ -21,9 +21,9 @@ print('八进制', 0o176)
 print('十六进制', 0x2AEF)
 
 # 浮点类型
-n1=1.1
-n2=2.2
-n3=2.1
+n1 = 1.1
+n2 = 2.2
+n3 = 2.1
 print(n1+n2)
 print(n1+n3)
 # 注意，这里导入 Decimal 的包

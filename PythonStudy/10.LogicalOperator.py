@@ -2,7 +2,7 @@
 # DateTime: 2023/3/4 11:04
 
 # 逻辑运算符, 输出的结果为 Boolean 类型， true/false
-a,b=10,20
+a, b = 10, 20
 print("a>b是否正确？", a>b)
 print("a<b是否正确？", a<b)
 print("a>=b是否正确？", a>=b)
@@ -15,7 +15,7 @@ print("a!=b是否正确？", a!=b)
     == 比较的是对象的 value 值
     is 比较的是对象的标识，即 内存地址
 '''
-a,b=10,10
+a, b = 10, 10
 # 输出看堆空间中 id 是否相同
 print(id(a))
 print(id(b))
@@ -27,13 +27,13 @@ print(a is b)
 print(a is not b)
 
 # list集合对比
-list1=[11,22,33]
-list2=[11,22,33]
+list1 = [11, 22, 33]
+list2 = [11, 22, 33]
 # 同样输出堆空间中 id , 对比 id 是否相等。我们发现 id 不同，即：list1 和 list2 不是同一个对象
 print(id(list1))
 print(id(list2))
 # 输出 value 对比 和 id 对比
-print(list1==list2) # True
-print(list1 is list2) # False
-print(list1 is not list2) # True
+print(list1 == list2)  # True
+print(list1 is list2)  # False
+print(list1 is not list2)  # True
 

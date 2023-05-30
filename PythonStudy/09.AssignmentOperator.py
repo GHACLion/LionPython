@@ -2,10 +2,10 @@
 # DateTime: 2023/3/2 20:30
 
 # 赋值运算符，运算顺序从右到左
-i=3+4
+i = 3 + 4
 print(i)
 
-a=b=c=20
+a = b = c = 20
 # id() 属性代表创建对象时开辟的内存空间的位置（堆中的位置）
 print(a, id(a))
 print(b, id(b))
@@ -14,24 +14,24 @@ print(c, id(c))
 
 
 # 支持参数赋值
-a=20
+a = 20
 # 相当于 a=a+30
-a+=30
+a += 30
 print(a)
 # 同理，其他算术运算赋值也是一样的
 # 上述被重新赋值的 a= 50, a=a-10=40
-a-=10
+a -= 10
 print(a)
 # a= a*2 = 80
 a *= 2
 print(a)
 # a=a/3
-a /=3
+a /= 3
 print(a)
 # 因为3不能被整除，此时 a 的类型由 int 转为 float
 print(type(a))
 # //代表整除, 因为 a 的类型由 int 转为 float，此时再执行整除2时，数据类型依然是 float 类型，所以输出结果是 13.0 而不是 13
-a//=2
+a //= 2
 print(a)
 print(type(a))
 
@@ -42,7 +42,7 @@ print(a,b,c)
 
 
 # 交换两个变量的值
-a,b=20,30
+a,b = 20,30
 print("交换之前：", a, b)
-a,b=b,a
+a,b = b,a
 print("交换之后：", a, b)
