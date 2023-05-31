@@ -2,9 +2,13 @@
 # DateTime: 2023/3/2 19:39
 
 # 输入函数 input()
+
 # 可以用来提出问题，待用户输入答案后，把用户输入内容赋值给变量，再打印变量
-present = input('大圣想要什么礼物呢？')
+present = input('大圣想要什么礼物呢？\n')
 print(present, type(present))
+
+name = input("Who am I ? \n")
+print("Welcome " + str(name))
 
 # 从键盘录入两个整数，计算两个整数的和
 a = input('请输入一个加数：')

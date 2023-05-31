@@ -3,11 +3,11 @@
 
 # 逻辑运算符, 输出的结果为 Boolean 类型， true/false
 a, b = 10, 20
-print("a>b是否正确？", a>b)
-print("a<b是否正确？", a<b)
-print("a>=b是否正确？", a>=b)
-print("a<=b是否正确？", a<=b)
-print("a!=b是否正确？", a!=b)
+print("a>b是否正确？", a > b)
+print("a<b是否正确？", a < b)
+print("a>=b是否正确？", a >= b)
+print("a<=b是否正确？", a <= b)
+print("a!=b是否正确？", a != b)
 
 '''
     = 称为 赋值运算符， 而 == 称为逻辑运算符
