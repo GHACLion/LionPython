@@ -2,6 +2,12 @@
 # DateTime: 2023/3/4 11:29
 
 # 布尔运算符
+'''
+    Python 严格区分大小写，能识别的 Bool 类型只有两个值
+    True & False
+    Python 无法识别：TRUE, TRue, TRUe , FAlse, FaLsE 等
+'''
+
 
 # and 逻辑与  全真为真，有假则假
 a, b = 1, 2

@@ -69,3 +69,41 @@ rate = float(input('请输入收益率：'))
 rate = rate / 100
 earnings = money * (1 + rate) ** month
 print("到期后本息共计：" + str('%.2f' % earnings))
+
+# 翻转浮点数
+'''
+注意：
+    翻转仅支持对 str 类型的字符串进行翻转， 翻转格式：   hello[::-1]
+    在对数字进行反转时，我们先吧数字转换为 str 类型，翻转后，再对 str 类型转换为数字类型
+    
+    举例
+    aaa = 'Hello World'
+    aaa = aaa[::-1]
+    print(aaa)
+'''
+a = float(input('请输入一个数字：'))
+# 翻转仅支持 str 类型，所以先对数字进行类型转化
+a = str(a)
+# 翻转的标准写法 ： a = a[::-1]
+# 其实在这里，我们可以省略后续的类型转化，直接在这里反转后转化类型，写为  a = float(a[::-1])
+a = float(a[::-1])
+print(a, type(a))
+"""
+    注意上方，这里会有一个 Bug , float类型有精度限制，str 进行翻转后再转回 float 会可能出现精度的丢失
+    比如：输入：6441651354684351.31654546565 超过float的取值范围，翻转后再转化，就出现了精度的丢失，不是我们期待的结果
+"""
+
+
+# 这里我们回到开头的第一个练习题，计算圆的周长和面积，半径让用户输入
+redius = float(input('请输入圆形的半径：'))
+PI = 3.14159265354
+perimeter = 2 * PI * redius
+print("该圆周长为：", perimeter)
+# 如果对小数位数有规定，我们可以进行截取，默认四舍五入
+print("该圆周长为(保留2位小数)：", '%.2f' % perimeter)
+area = PI * redius ** 2
+print("该圆面积为：", area)
+# 同理，取小数点后2位，默认四舍五入
+print("该圆面积为(保留2位小数)：", '%.2f' % area)
+
+
